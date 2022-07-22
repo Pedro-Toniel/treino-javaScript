@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Arrays 002</title>
+    <style>
+        body{
+            text-transform: uppercase;
+            background-color: blue;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Treino Arrays 002
+    </h1>
+    <script>
+        var frutas = [
+            ['melância','laranja','pêssego'],
+            ['pêra','abacaxi','melão'],
+                [ 'banana','maçã','uva'],
+                ];
+
+        var valores = '';
+
+        for (var L = 0;L <= 2; L++)
+        {
+            for (var C = 0; C <= 2; C++){
+             if (C < 2){valores+= frutas[L][C] + '\t'}
+             else {
+                valores += frutas[L][C]+ '\n';
+             }
+            };
+        }
+        alert('todas as frutas: \n' + valores);
+    </script> 
+    
+</body>
+</html>
